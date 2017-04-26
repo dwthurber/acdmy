@@ -1,0 +1,93 @@
+.space {
+  padding: 50px 0;
+}
+.logo {
+  height: 100px;
+}
+h2 {
+  color: #999;
+  font-weight: 100;
+  border-bottom: 1px solid #dfdfdf;
+}
+h6 {
+  color: #7BC9CD;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+p {
+  font-weight: 200;
+}
+
+/* ==============
+
+masonry
+
+============== */
+
+.cards-container {
+  column-break-inside: avoid;
+}
+.cards-container .card {
+  display: inline-block;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .cards-container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .cards-container {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+/* ==============
+
+NAV
+
+============== */
+
+nav {
+  position: fixed;
+  width: 75px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+nav li a {
+  color: #333;
+  width: 100%;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+nav li:first-child {
+  background-color: #7BC9CD;
+}
+
+nav li a.active,
+nav li a:hover {
+  background-color: #cfcfcf;
+  color: #7BC9CD;
+}
