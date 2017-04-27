@@ -1,9 +1,12 @@
 
 .space {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .logo {
   height: 100px;
+}
+.logo.smaller {
+  height: 90px;
 }
 h2 {
   color: #999;
@@ -21,10 +24,16 @@ p {
   font-weight: 300;
 }
 a {
-  color: #7BC9CD
+  color: #7BC9CD;
 }
 a:hover {
   color: #308A8E;
+}
+.title {
+  border-bottom: none;
+  color:#7BC9CD;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 /* ==============
@@ -78,6 +87,7 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 200;
 }
 nav ul li {
   width: 100%;
