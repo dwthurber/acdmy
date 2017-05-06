@@ -31,9 +31,12 @@ a:hover {
 }
 .title {
   border-bottom: none;
-  color:#7BC9CD;
+  color:#fff;
   text-transform: uppercase;
   font-weight: 100;
+}
+.card-action a {
+  color: #7BC9CD!important;
 }
 
 /* ==============
@@ -129,4 +132,8 @@ Responsive
   nav {
     width: 50px;
   }
+}
+
+.parallax {
+  left: 50px;
 }
