@@ -34,15 +34,7 @@ p {
   margin-top: -180px;
 }
 .card-action a {
-  color: #A0CCCE!important;
-}
-
-.primary {
-  background-color: #A0CCCE; 
-}
-
-.primary-darker-1 {
-  background-color: #6DA6A9;
+  color: #607d8b!important;
 }
 
 footer a:hover {
