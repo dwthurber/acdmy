@@ -18,7 +18,7 @@ h2 {
   padding-bottom: 5px;
 }
 h6 {
-  color: #7BC9CD;
+  color: #A0CCCE;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 200;
@@ -27,21 +27,24 @@ p {
   font-weight: 300;
 }
 a {
-  color: #7BC9CD;
+  color: #A0CCCE;
 }
 a:hover {
-  color: #308A8E;
+  color: #6DA6A9;
 }
 .title {
   border-bottom: none;
   color:#333;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-weight: 100;
 }
 .card-action a {
-  color: #7BC9CD!important;
+  color: #A0CCCE!important;
 }
 
+.primary {
+  background-color: #A0CCCE; 
+}
 /* ==============
 
 masonry
@@ -88,7 +91,7 @@ NAV
 ============== */
 
 nav {
-  background-color: #A0CCCE;
+/*  background-color: #6DA6A9;*/
 }
 
 .brand-logo {
@@ -123,4 +126,7 @@ Hero
   width: 80%;
   left: 50%;
   margin-left: -40%;
+}
+.parallax-container {
+  height: 600px;
 }
