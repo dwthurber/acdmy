@@ -1,6 +1,6 @@
 
 body {
-  background-color: #F4FBFB;
+  background-color: #FCFCFC;
 }
 .space {
   padding: 30px 0;
@@ -24,19 +24,14 @@ h6 {
   font-weight: 200;
 }
 p {
-  font-weight: 300;
-}
-a {
-  color: #A0CCCE;
-}
-a:hover {
-  color: #6DA6A9;
+  font-weight: 200;
 }
 .title {
   border-bottom: none;
   color:#333;
 /*  text-transform: uppercase;*/
   font-weight: 100;
+  margin-top: -180px;
 }
 .card-action a {
   color: #A0CCCE!important;
@@ -44,6 +39,14 @@ a:hover {
 
 .primary {
   background-color: #A0CCCE; 
+}
+
+.primary-darker-1 {
+  background-color: #6DA6A9;
+}
+
+footer a:hover {
+  color: #fff;
 }
 /* ==============
 
@@ -92,6 +95,7 @@ NAV
 
 nav {
 /*  background-color: #6DA6A9;*/
+  box-shadow: none;
 }
 
 .brand-logo {
