@@ -44,7 +44,7 @@ img {
 
 p { 
   color: #333;
-  line-height: 2.5rem;
+  line-height: 3rem;
   margin: 20px 0;
 }
 h2 {
@@ -861,9 +861,14 @@ Main components
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 1170px;
   margin: 0 auto;
 }
 
 
+
+.cd-prototype {
+  min-height: 200px;
+  background-color: #9DBED5;
+}
