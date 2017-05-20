@@ -106,6 +106,11 @@ Modules - reusable parts of our design
   display: none;
 }
 
+.btn-light {
+  background-color: #CBDFED;
+  color: #467495;
+}
+
 .no-touch .cd-btn:hover {
   background-color: #6D97B4;
 }
@@ -151,6 +156,12 @@ Main components
   .cd-product.is-product-tour {
     height: auto;
     padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cd-product {
+    min-height: 80vh;
   }
 }
 
@@ -231,6 +242,7 @@ Main components
   max-width: 750px;
   margin: 0 auto 50px;
   position: relative;
+  box-shadow: 1px 1px 45px 15px rgba(0,0,0,0.2);
 }
 .cd-product-mockup img {
   display: block;
@@ -267,6 +279,7 @@ Main components
     -webkit-transition: -webkit-transform 0.6s;
     -moz-transition: -moz-transform 0.6s;
     transition: transform 0.6s;
+    box-shadow: none;
   }
   .cd-product-mockup::before {
     /* mockup shadow */
@@ -275,9 +288,9 @@ Main components
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 40%;
     /* play with these values to create a realistic shadow */
-    height: 0%;
+    height: 25%;
     box-shadow: 0px 0px 30px 225px rgba(0, 0, 0, 0.1);
     -webkit-transform: translateZ(-100px) translateY(480px);
     -moz-transform: translateZ(-100px) translateY(480px);
@@ -324,7 +337,7 @@ Main components
     display: block;
     position: absolute;
     left: 0;
-    background-image: url(../img/Overview@2x.png);
+    background-image: url(../img/Groups.png);
     /* Firefox bug - 3D CSS transform, jagged edges */
     outline: 1px solid transparent;
   }
@@ -495,8 +508,8 @@ Main components
   right: 41%;
 }
 .cd-single-point:nth-of-type(2) {
-  top: -2%;
-  right: 12%;
+  top: -1%;
+  right: 10%;
 }
 .cd-single-point:nth-of-type(3) {
   top: 6%;
@@ -507,7 +520,7 @@ Main components
   left: 8%;
 }
 .cd-single-point.is-open > a {
-  background-color: #A7A8DC;
+  background-color: #cccccc;
 }
 .cd-single-point.is-open > a::after, .cd-single-point.is-open > a::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
@@ -533,7 +546,7 @@ Main components
   transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
 .cd-single-point.visited > a {
-  background-color: #685f99;
+  background-color: #888888;
 }
 .cd-single-point.visited::after {
   /* pulse effect no more active on visited elements */
@@ -869,6 +882,74 @@ Main components
 
 
 .cd-prototype {
-  min-height: 200px;
+  padding: 30px 0;
   background-color: #9DBED5;
+  text-align: center;
+}
+
+.cd-prototype h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.half-block img {
+  height: 200px;
+}
+.half-block {
+  margin: 20px 0;
+}
+@media only screen and (min-width: 1170px) {
+   .half-block {
+      width: 45%;
+      float: left;
+    }
+    .cd-prototype {
+      min-height: 300px;
+    }
+}
+
+/* -------------------------------- 
+
+Cards
+
+-------------------------------- */
+
+.card {
+  width: 100%;
+  min-height: 200px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px #ddd;
+  border-radius: 3px;
+  margin: 8px 0;
+  position: relative;
+}
+
+.cards-container {
+  column-break-inside: avoid;
+}
+.cards-container .card {
+  display: inline-block;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .cards-container {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .cards-container {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
 }
