@@ -8,4 +8,4 @@ It is not a web conferencing platform. It is an online learning environment cond
 
 If you have ideas or want to get in touch, I would love to hear from you at <a href="mailto:hello@dwthurber.com">hello@dwthurber.com</a>.
 
-Special thanks to [https://codyhouse.co/](CodyHouse) who design awesome web components used here.
+Special thanks to [CodyHouse](https://codyhouse.co/) who design awesome web components used here.
