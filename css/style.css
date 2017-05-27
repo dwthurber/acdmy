@@ -516,8 +516,12 @@ Main components
   left: 14%;
 }
 .cd-single-point:nth-of-type(4) {
-  bottom: 5%;
-  left: 8%;
+  bottom: 2%;
+  left: 48%;
+}
+.cd-single-point:nth-of-type(5) {
+  bottom: 32%;
+  left: 14%;
 }
 .cd-single-point.is-open > a {
   background-color: #cccccc;
