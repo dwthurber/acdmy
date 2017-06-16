@@ -523,6 +523,10 @@ Main components
   bottom: 32%;
   left: 14%;
 }
+.cd-single-point:nth-of-type(6) {
+  bottom: 8%;
+  right: 5%;
+}
 .cd-single-point.is-open > a {
   background-color: #cccccc;
 }
